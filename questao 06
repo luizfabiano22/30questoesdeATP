@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main() {
+
+//declaração de variaveis
+int idade, soma = 0, quantidade=0;
+float media;
+
+//processamento
+   printf("Inserir idade: ");
+   scanf("%d", &idade);
+
+while(idade != -1){
+   soma = soma + idade;
+   quantidade++;
+
+   printf("Inserir idade: ");
+   scanf("%d", &idade);
+}
+//saida
+if(quantidade > 0){
+  media = (float)soma/quantidade;
+
+printf("A soma das idades e %.1d\n", soma);
+printf("A media das idades e %.1f\n", media);
+}
+else{
+    printf("idade nao informada");
+}
+
+return 0;
+
+}
