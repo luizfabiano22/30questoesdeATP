@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int main() {
+
+//declaracao de variaveis
+    int quantidade;
+    int a = 0;
+    int b = 1;
+    int proximo;
+//pocessamento
+    printf("Quantos termos? ");
+    scanf("%d", &quantidade);
+
+    for (int i = 0; i < quantidade; i++) {
+
+        printf("%d ", a);
+
+        proximo = a + b;
+
+        a = b;
+        b = proximo;
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+//declaraçao de variaveis
+int t1 = 1, t2 = 1, proximo, n;
+
+printf("Digite a quantidade de termos (n): ");
+scanf("%d", &n);
+
+printf("Os %d primeiros termos da sequencia de Fibonacci sao:\n", n);
+//processamento
+for (int i = 1; i <= n; i++) {
+if (i == 1) {
+
+//saida
+printf("%d", t1);
+} else if (i == 2) {
+printf(" %d", t2);
+
+} else {
+proximo = t1 + t2;
+t1 = t2;
+t2 = proximo;
+printf(" %d", proximo);
+   }
+}
+
+printf("\n");
+
+return 0;
+}
