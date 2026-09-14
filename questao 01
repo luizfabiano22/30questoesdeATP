@@ -8,7 +8,7 @@ int soma = 0;
 for(int i=1; i <=100; i++){
 soma = soma + i;}
 
-/saida
+//saida
 printf("A soma dos numeros de 1 a 100 é: %d", soma);
 
 return 0;
