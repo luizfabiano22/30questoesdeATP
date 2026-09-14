@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+
+//declaração de variaveis
+int v1, v2;
+
+//processamento
+printf("Inserir primeiro valor: ");
+scanf("%d", &v1);
+printf("Inserir segundo valor: ");
+scanf("%d", &v2);
+
+while(v2<=v1){
+    printf("Inserir segundo valor novamente valor: ");
+    scanf("%d", &v2);
+}
+
+//saida
+printf("O primeiro valor e %d e o segundo e %d\n", v1, v2);
+
+return 0;
+
+}
