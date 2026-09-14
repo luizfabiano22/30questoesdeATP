@@ -1,3 +1,5 @@
+//Exibir a soma dos números positivos no intervalo de um a cem.
+
 #include <stdio.h>
 int main (){
 
