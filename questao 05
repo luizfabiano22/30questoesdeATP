@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+
+//declaração de variaveis
+int idade, quantidade = 0, soma = 0;
+float media;
+
+//processamento
+for(int i=1; i<=20; i++){
+   soma = soma + idade;
+   printf("Inserir idade: ");
+   scanf("%d", &idade);
+
+   media = (float)soma/20;
+}
+//saida
+printf("A media das idades e %.1f\n", media);
+
+return 0;
+
+}
